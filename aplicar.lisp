@@ -8,7 +8,7 @@
 
 
 (defun aplicar (p1 s1)
-
+	; (format t "aplicar (~D ~D)~%"p1 s1)
 	(if (eq p1 nil)
 		(if (eq s1 'nil)
 			'nil
@@ -37,7 +37,7 @@
 						; (format t "-> Tenemos: ~D~%" returnValue)
 
 						)
-
+					
 					(return returnValue)
 					)
 				)

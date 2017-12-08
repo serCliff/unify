@@ -5,6 +5,7 @@
 	(print (load "aparece.lisp"))
 	(print (load "aplicar.lisp"))
 	(print (load "componer.lisp"))
+	(print (load "unificar.lisp"))
 )
 
 (defun p()
