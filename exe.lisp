@@ -1,0 +1,12 @@
+(defun carga()
+	(print (load "atomo.lisp"))
+	(print (load "esVariable.lisp"))
+	(print (load "intercambiar.lisp"))
+	(print (load "aparece.lisp"))
+	(print (load "aplicar.lisp"))
+	(print (load "componer.lisp"))
+)
+
+(defun p()
+	(carga)
+)

@@ -1,0 +1,8 @@
+res lineal:
+- Para ejecutar una regla final hay pasar por cada una de las preguntas y estas han de saber toda la info
+- Cada vez que evaluo una regla he de saber como he llegado a esa regla, es decir cada regla ha de mantener un historial de como se ha llegado a ella misma
+
+res metaconocimiento:
+- Tenemos pleno conocimiento del modelo
+- Sólo necesitamos saber si la anterior regla ha sido cumplida
+- Si la anterior es (verdad/mentira) y el actual es desconocido, ejecutar cuadro de dialogo acutal con las reglas del estado actual
