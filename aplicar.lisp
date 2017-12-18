@@ -9,13 +9,19 @@
 
 (defun aplicar (p1 s1)
 	; (format t "aplicar (~D ~D)~%"p1 s1)
-	(if (eq p1 nil)
-		(if (eq s1 'nil)
-			'nil
-			s1
-			)
+
+
+	(if (eq p1 'nil)
+		'nil
 		(if (eq s1 'nil)
 			p1
+	; (if (eq p1 'nil)
+	; 	(if (eq s1 'nil)
+	; 		'nil
+	; 		s1
+	; 		)
+	; 	(if (eq s1 'nil)
+	; 		'nil
 			(if (eq (esVariable p1) 'lista)
 				(prog
 					(let (returnValue 'nil))
