@@ -38,12 +38,15 @@
 
 		(if (eq (esVariable e1) 'esVariable)
 			(if (eq (equals (aparece e1 (list e2)) e1) 'true) 
-				(setf returnIf 'FALLO)
+				(if (eq (equals e1 e2) 'true) 
+					(setf returnIf 'FALLO)
+					(setf returnIf (list e2 e1))
+					)
 				(setf returnIf (list e2 e1))
 				)
-			)
-		(if (eq (esVariable e2) 'esVariable)
-			(setf returnIf (list e1 e2))
+			(if (eq (esVariable e2) 'esVariable)
+				(setf returnIf (list e1 e2))
+				)
 			)
 
 		returnIf

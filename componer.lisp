@@ -130,7 +130,7 @@
 		; (format t "~%primerResultado: ~D~%" primerResultado)
 
 		(setf finales (concatenaResto primerResultado s2))
-		
+
 		; (format t "~%FINALES: ~D~%" finales)
 
 		(if (eq (first finales) 'nil)
@@ -138,7 +138,13 @@
 			
 			(if (eq (first primerResultado) 'nil)
 				(setf returnValue finales)
-				(setf returnValue (append primerResultado finales))
+				(if (eq (esPar primerResultado) 'true)
+					(if (eq (esPar finales) 'true)
+						(setf returnValue (list primerResultado finales))
+						(setf returnValue (reverse (append (reverse finales) (list primerResultado))))
+						)
+					(setf returnValue (append primerResultado finales))
+					)
 				)
 			)
 
